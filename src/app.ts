@@ -1,4 +1,4 @@
-import express, { Application, Request, Response } from "express";
+import express, { Application, Response } from "express";
 import bodyParser from "body-parser";
 
 const app: Application = express();
@@ -10,7 +10,7 @@ app.get("/healthy", (_, res: Response) => {
   res.send({ status: "heatlhy" });
 });
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (_, res: Response) => {
   res.send({ msg: "TS App is Running" });
 });
 

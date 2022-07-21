@@ -1,3 +1,3 @@
 # byor-test-1
 
-This is a test repo
+Sample Node/TS API
