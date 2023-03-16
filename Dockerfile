@@ -1,6 +1,7 @@
 FROM node:alpine
 
 WORKDIR /usr
+USER 10014
 
 COPY package.json ./
 COPY tsconfig.json ./
